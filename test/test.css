@@ -1,0 +1,11 @@
+li, button {
+	color: blue;
+	list-style: square;
+}
+
+
+ .selected,  .selected button  {
+    color:red;
+    list-style-color: red;
+}
+
