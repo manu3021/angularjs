@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weathers</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script type="text/javascript" src="weather.js"></script>
+</head>
+<body ng-app="myapp">
+	<div ng-controller="MyModuleWeather">
+	  <label for="city">City</label>
+	  <input type="text" ng-model="city" /></br>
+	  <label for="units">Units</label>
+	  <input type="radio" ng-model="units" value="metric"/> Metric
+	  <input type="radio" ng-model="units" value="imperial"/> Imperial</br>
+	  <button ng-click="change()">Change</button>
+	  <h3>{{data.name}}</h3>
+	  <p>{{description}}</p>
+	  <p>Temperature: {{main.temp}}</p>
+	  <p>Wind speed: {{wind.speed}}</p>
+	</div>
+</body>
+</html>
